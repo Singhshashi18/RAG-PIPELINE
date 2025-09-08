@@ -2,7 +2,7 @@ import express from "express";
 import { retriever } from "../rag/retriever";
 import { generateAnswer } from "../rag/generator";
 
-const router = express.Router();
+const router = express.Router(); 
  
 router.post("/chat", async (req, res) => {
   const { message } = req.body;
