@@ -7,7 +7,7 @@ export const ChatBox = () => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
-  const sendMessage = async () => {
+  const sendMessage = async () => { 
     if (!input.trim()) return;
     setLoading(true);
     setError(null);
